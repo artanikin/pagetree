@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130708024850) do
+ActiveRecord::Schema.define(:version => 20130708140254) do
 
   create_table "pages", :force => true do |t|
     t.string   "name"
@@ -23,5 +23,6 @@ ActiveRecord::Schema.define(:version => 20130708024850) do
   end
 
   add_index "pages", ["ancestry"], :name => "index_pages_on_ancestry"
+  add_index "pages", ["name"], :name => "index_pages_on_name", :unique => true
 
 end
