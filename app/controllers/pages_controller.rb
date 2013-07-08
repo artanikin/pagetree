@@ -26,6 +26,7 @@ class PagesController < ApplicationController
   end
 
   def update
+    # TODO: 1. Заменить render
     @page = Page.find(params[:id])
     if @page.update_attributes(params[:page])
       render :show
