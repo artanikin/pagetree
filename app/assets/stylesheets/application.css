@@ -5,3 +5,11 @@
  *= require_self
  *= require_tree . 
 */
+
+.nested_pages {
+  margin-left: 1em
+}
+
+.nested_pages .nested_pages .nested_pages .nested_pages .nested_pages {
+  margin-left: 0em
+}
