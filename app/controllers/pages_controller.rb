@@ -30,6 +30,8 @@ class PagesController < ApplicationController
     @page = Page.find(params[:id])
     if @page.update_attributes(params[:page])
       render :show
+    else
+      render :edit
     end
   end
 end
