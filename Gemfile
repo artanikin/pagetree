@@ -18,10 +18,15 @@ group :assets do
   gem 'uglifier'
 end
 
+group :development do
+  gem 'annotate'
+end
+
 group :test do
   gem 'capybara', '1.1.2'
   gem 'rb-inotify'
   gem 'libnotify'
+  gem 'factory_girl_rails'
 end
 
 # group :production do
