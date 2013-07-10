@@ -1,3 +1,17 @@
 <h1>Pages</h1>
 
 <%= nested_pages @pages.arrange(:order => :created_at) %>
+
+<p>=== <br>
+	<% @pages.each do |page| %>
+		<%= page.name %> -> <%= page.path_ids %> <br>
+	<% end %>
+===</p>
+
+<%= @link %>
+
+<%= link_to 'Show', show_page_path('name02/name05') %>
+<%= link_to 'Add', add_page_path('name02') %>
+<!-- page.ancestor_ids -->
+<!-- path_ids -->
+<!-- .path.all -->
