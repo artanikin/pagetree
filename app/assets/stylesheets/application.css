@@ -6,10 +6,39 @@
  *= require_tree . 
 */
 
+.page {
+  margin: 0.5em 0;
+}
+
+.page a,
+.bottom_action_menu a {
+  color: #1E90FF;
+}
+
+span.more_link {
+  font-size: 90%
+}
+
+span.more_link a {
+  color: #4682B4;
+}
+
 .nested_pages {
   margin-left: 1em
 }
 
 .nested_pages .nested_pages .nested_pages .nested_pages .nested_pages {
   margin-left: 0em
+}
+
+.bottom_action_menu {
+  width: 300px;
+  border-top: 2px solid #000;
+  padding-top: 0.5em;
+}
+
+.explanation {
+  border: 2px solid red;
+  width: 300px;
+  padding: 10px 0;
 }

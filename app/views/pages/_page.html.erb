@@ -1,5 +1,7 @@
 <div class="page">
-  <%= link_to page.title, show_page_path(create_link(page.path.all)) %> 
-  (<%= link_to 'Reply', add_page_path(create_link(page.path.all)) %>) 
-  (<%= link_to 'Edit',  edit_page_path(create_link(page.path.all)) %>)
+  <%= link_to truncate(page.title, length: 20), show_page_path(create_link(page.path.all)) %> 
+  <span class="more_link">
+    (<%= link_to 'Reply', add_page_path(create_link(page.path.all)) %> / 
+    <%= link_to 'Edit',  edit_page_path(create_link(page.path.all)) %>)
+  </span>
 </div>

@@ -7,6 +7,5 @@ Pagetree::Application.routes.draw do
 
   root :to => 'pages#index', as: 'pages'
 
-  resources :pages, path: '/', 
-                    only: [ :update ]
+  resources :pages, path: '/', only: [ :update ]
 end
