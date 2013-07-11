@@ -1,3 +1,5 @@
 <h1>Pagetree</h1>
 
+<div class="top_nav"><%= link_to "Добавить корневую страницу", add_page_path() %></div>
+
 <%= nested_pages @pages.arrange(:order => :created_at) %>

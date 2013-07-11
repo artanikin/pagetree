@@ -6,6 +6,12 @@
  *= require_tree . 
 */
 
+
+.top_nav {
+  margin-bottom: 2em;
+  font: 80% Arial;
+}
+
 .page {
   margin: 0.5em 0;
 }
@@ -16,18 +22,19 @@
 }
 
 span.more_link {
-  font-size: 90%
+  font: 80% Arial;
 }
 
 span.more_link a {
   color: #4682B4;
+  text-decoration: none;
 }
 
 .nested_pages {
   margin-left: 1em
 }
 
-.nested_pages .nested_pages .nested_pages .nested_pages .nested_pages {
+.nested_pages .nested_pages .nested_pages .nested_pages .nested_pages .nested_pages .nested_pages {
   margin-left: 0em
 }
 

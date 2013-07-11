@@ -12,7 +12,7 @@
 #
 
 class Page < ActiveRecord::Base
-  attr_accessible :name, :title, :description
+  attr_accessible :name, :title, :description, :parent_id
   # Подключает к модели плагин Ancestry
   # Плагин берет на себя большую часть работы с вложенными страницами
   has_ancestry
